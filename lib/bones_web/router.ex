@@ -19,6 +19,7 @@ defmodule BonesWeb.Router do
 
     live "/", PageLive, :index
     live "/login", LoginPageLive, :login
+    live "/profile", ProfilePageLive, :profile
   end
 
   # Other scopes may use custom stacks.
