@@ -19,7 +19,9 @@
       ) %>
     </div>
     <div class="w-2/5 px-2">
-      <div class="mt-4">
-      </div>
+        <%= live_component(
+        @socket,
+        HashtagsLive
+      ) %>
     </div>
 </div>

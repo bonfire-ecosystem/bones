@@ -1,7 +1,7 @@
-defmodule BonesWeb.ProfilePageLive do
+defmodule BonesWeb.LoggedPageLive do
   use BonesWeb, :live_view
-  alias BonesWeb.HeaderGuestLive
-  alias BonesWeb.LogoHeaderLive
+  alias BonesWeb.HeaderLive
+  alias BonesWeb.SidebarLive
   alias BonesWeb.ProfileHeroLive
   alias BonesWeb.FeedLive
   alias BonesWeb.HashtagsLive

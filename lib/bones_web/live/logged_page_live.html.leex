@@ -1,0 +1,37 @@
+<div class="h-screen flex overflow-hidden">
+ <%= live_component(
+    @socket,
+    SidebarLive
+  ) %>
+
+  <div class="flex flex-col w-0 flex-1 overflow-y-auto">
+
+    <div class="h-screen container mx-auto max-w-screen-lg">
+      <%= live_component(
+        @socket,
+        HeaderLive
+      ) %>
+
+      <div class="p-4 lg:p-0">
+        <%= live_component(
+          @socket,
+          ProfileHeroLive
+        ) %>
+        <div class="block lg:flex mt-6 lg:-mx-2">
+            <div class="lg:w-3/5 lg:px-2">
+              <%= live_component(
+                @socket,
+                FeedLive
+              ) %>
+            </div>
+            <div class="lg:w-2/5 lg:px-2">
+                <%= live_component(
+                @socket,
+                HashtagsLive
+              ) %>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
